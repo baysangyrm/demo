@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1510px;
+    margin: 0 auto;
+}
+body{
+    background-image: url('../img/body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkslateblue;
+}
+@font-face {
+	font-family: 'Pixel-font'; 
+	src: url(../fonts/DotGothic16-Regular.ttf); 
+}
+
+.header-logo__image{
+    width: 200px;
+}
+.header-wrapper{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-text{
+    padding-right: 20px;
+}
+.header-links{
+    font-family: Pixel-font;
+    text-decoration: none;
+    padding: 0px 20px 10px 10px;
+    color: darkorange;
+}
+.header-logo__text{
+    margin: 0;
+    font-size: 30px;
+    font-family: Pixel-font;
+    color: darkorange;
+}
+
+.wellcome-text__title{
+    font-family: Pixel-font;
+    text-align: center;
+    padding-top: 220px;
+    color: darkorange;
+}
+.news{
+    padding-bottom: 300px;
+
+}
+.block-news__image{
+ width: 300px;   
+}
+.blocks-news{
+    margin-top: 100px;
+    margin-left: 100px; 
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block-news{
+    padding: 15px 15px;
+}
+.block-news__title{
+    font-family: Pixel-font;
+    color: darkorange;
+}
+.block-news__description{
+    font-family: Pixel-font;
+    color: white;
+}
+.block-news__link{
+    font-family: Pixel-font;
+    text-decoration: none;
+    color: yellowgreen;
+}
+.footer{
+    background-color: darkslateblue;
+}
+.footer-copyriting{
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 0px 20px;
+}
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+.news-blocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.news-block{
+    padding-right: 15px;
+    margin-top: 150px;
+}
+.news-block__image{
+    width: 300px;
+    border: 3px solid cornsilk;
+}
+.news-block__title{
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: brown;
+    font-family: Pixel-font ;
+}
+.news-block__description{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: white;
+    font-family: Pixel-font ;
+}
+.news-block__button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 60px;
+    margin-left: 50px;
+    background-color: teal;
+    color: yellow;
+    font-family: Pixel-font;
+}
