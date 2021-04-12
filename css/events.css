@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1510px;
+    margin: 0 auto;
+}
+body{
+    background-image: url('../img/body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkslateblue;
+}
+@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} } 
+@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+@media screen and (max-width: 992px) { div.contentblock {width: 970px;} } 
+@font-face {
+	font-family: 'Pixel-font'; 
+	src: url(../fonts/DotGothic16-Regular.ttf); 
+}
+
+.header-logo__image{
+    width: 200px;
+}
+.header-wrapper{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-text{
+    padding-right: 20px;
+}
+.header-links{
+    font-family: Pixel-font;
+    text-decoration: none;
+    padding: 0px 20px 10px 10px;
+    color: darkorange;
+}
+
+.header-logo__text{
+    margin: 0;
+    font-size: 30px;
+    font-family: Pixel-font;
+    color: darkorange;
+}
+
+.wellcome-text__title{
+    font-family: Pixel-font;
+    text-align: center;
+    padding-top: 220px;
+    color: darkorange;
+}
+.events-blocks{
+    margin-bottom: 90px;
+}
+.events-block__title{
+    padding-top: 300px;
+    text-align: center;
+    color: darkorange;
+    font-family: Pixel-font;
+}
+.events-block__image{
+    margin-left: 100px;
+    text-align: center;
+    width: 1000px;
+    margin-top: 30px;
+}
+.events-block__description{
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    font-family: Pixel-font;
+
+}
+.events-block__link{
+    text-align: center; 
+    padding-left: 500px;
+    text-decoration: none;
+    color: rgb(54, 197, 207);
+    font-size: 30px;
+    font-family: Pixel-font;
+    margin-bottom: 80px;
+}
+.events-block__link:hover{
+    padding-left: 600px;
+    text-decoration: none;
+    color: rgb(38, 139, 146);
+    font-size: 30px;
+    font-family: Pixel-font;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: darkslateblue;
+}
+.footer-copyriting{
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 0px 20px;
+}
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

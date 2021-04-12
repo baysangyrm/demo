@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .container{
-    width: 1510px;
+    width: 1210px;
     margin: 0 auto;
 }
 body{
@@ -11,6 +11,10 @@ body{
     background-size: cover;
     background-color: darkslateblue;
 }
+/* Автоматический подбор размера сайта */
+@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} } 
+@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+@media screen and (max-width: 992px) { div.contentblock {width: 970px;} } 
 @font-face {
 	font-family: 'Pixel-font'; 
 	src: url(../fonts/DotGothic16-Regular.ttf); 
@@ -19,20 +23,44 @@ body{
 .header-logo__image{
     width: 200px;
 }
+.header-logo__link{
+    text-decoration: none;
+}
+.header{
+    background-color: rgba(2%, 20%, 34%, 0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+}
 .header-wrapper{
-    padding-top: 10px;
+    padding-top: 9px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 5px;
 }
-.header-text{
+.nav{
     padding-right: 20px;
+    margin-left: 60px;
 }
 .header-links{
     font-family: Pixel-font;
     text-decoration: none;
     padding: 0px 20px 10px 10px;
     color: darkorange;
+}
+.header-links:hover{
+    font-family: Pixel-font;
+    text-decoration: none;
+    padding: 0px 20px 10px 10px;
+    color: rgb(177, 100, 6);
+    border-bottom: 1px solid darkorange ;
+}
+.header-links:active{
+    border-bottom: 1px solid darkorange ;
 }
 .header-logo__text{
     margin: 0;
@@ -88,7 +116,7 @@ body{
 .footer-text{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 
@@ -97,45 +125,3 @@ body{
 
 
 
-.news-blocks{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.news-block{
-    padding-right: 15px;
-    margin-top: 150px;
-}
-.news-block__image{
-    width: 300px;
-    border: 3px solid cornsilk;
-}
-.news-block__title{
-    margin: 0;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: brown;
-    font-family: Pixel-font ;
-}
-.news-block__description{
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 80px;
-    text-align: center;
-    color: white;
-    font-family: Pixel-font ;
-}
-.news-block__button{
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 60px;
-    margin-left: 50px;
-    background-color: teal;
-    color: yellow;
-    font-family: Pixel-font;
-}
